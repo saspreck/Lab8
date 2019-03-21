@@ -13,7 +13,7 @@ Tasks:
 6.  complete BoardGame moveTwoPlayers method
 7.  complete BoardGame getPlayersLocation method
 8.  complete BoardGame getPlayersAtLocation method
-9.  complete 
+9.  complete Location enum
 10. complete 
 11. complete 
 12. complete 
@@ -36,7 +36,7 @@ Estimated Time (minutes):
 6.  10
 7.  3
 8.  10
-9.  
+9.  5
 10. 
 11. 
 12. 
@@ -59,7 +59,7 @@ Actual Time (minutes):
 6.  15
 7.  2
 8.  
-9.  
+9.  3
 10. 
 11. 
 12. 
