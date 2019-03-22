@@ -14,8 +14,8 @@ Tasks:
 7.  complete BoardGame getPlayersLocation method
 8.  complete BoardGame getPlayersAtLocation method
 9.  complete Location enum
-10. complete 
-11. complete 
+10. define Color enum 
+11. complete Color constructor
 12. complete 
 13. complete 
 14. complete 
@@ -37,8 +37,8 @@ Estimated Time (minutes):
 7.  3
 8.  10
 9.  5
-10. 
-11. 
+10. 3
+11. 5
 12. 
 13. 
 14. 
@@ -60,8 +60,8 @@ Actual Time (minutes):
 7.  2
 8.  
 9.  3
-10. 
-11. 
+10. 3
+11. 5
 12. 
 13. 
 14. 
