@@ -17,7 +17,7 @@ Tasks:
 10. define Color enum 
 11. complete Color constructor
 12. complete Shape enum
-13. complete 
+13. complete GamePieceAppearance constructor
 14. complete 
 15. complete  
 16. complete
@@ -40,7 +40,7 @@ Estimated Time (minutes):
 10. 3
 11. 5
 12. 10
-13. 
+13. 5
 14. 
 15. 
 16. 
@@ -63,7 +63,7 @@ Actual Time (minutes):
 10. 3
 11. 5
 12. 7
-13. 
+13. 4
 14. 
 15. 
 16. 
