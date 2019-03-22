@@ -16,7 +16,7 @@ Tasks:
 9.  complete Location enum
 10. define Color enum 
 11. complete Color constructor
-12. complete 
+12. complete Shape enum
 13. complete 
 14. complete 
 15. complete  
@@ -39,7 +39,7 @@ Estimated Time (minutes):
 9.  5
 10. 3
 11. 5
-12. 
+12. 10
 13. 
 14. 
 15. 
@@ -62,7 +62,7 @@ Actual Time (minutes):
 9.  3
 10. 3
 11. 5
-12. 
+12. 7
 13. 
 14. 
 15. 
