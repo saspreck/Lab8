@@ -18,10 +18,10 @@ Tasks:
 11. complete Color constructor
 12. complete Shape enum
 13. complete GamePieceAppearance constructor
-14. complete 
-15. complete  
-16. complete
-17. 
+14. complete GamePiece constructor
+15. complete GamePiece getters 
+16. complete GamePiece movesFirst method
+17. complete GamePiece toString method
 18. 
 19. 
 20. 
@@ -41,10 +41,10 @@ Estimated Time (minutes):
 11. 5
 12. 10
 13. 5
-14. 
-15. 
-16. 
-17. 
+14. 4
+15. 3
+16. 4
+17. 5
 18. 
 19. 
 20. 
@@ -64,10 +64,10 @@ Actual Time (minutes):
 11. 5
 12. 7
 13. 4
-14. 
-15. 
-16. 
-17. 
+14. 8
+15. 3
+16. 3
+17. 5
 18. 
 19. 
 20. 
