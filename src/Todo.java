@@ -22,10 +22,10 @@ Tasks:
 15. complete GamePiece getters 
 16. complete GamePiece movesFirst method
 17. complete GamePiece toString method
-18. 
-19. 
-20. 
-21. 
+18. complete BoardGame getGamePiecesAtLocation method
+19. complete BoardGame getPlayers method
+20. complete BoardGame getPlayerLocations method
+21. complete BoardGame getPlayerPieces method
 
 Estimated Time (minutes):
 1.  5
@@ -45,20 +45,20 @@ Estimated Time (minutes):
 15. 3
 16. 4
 17. 5
-18. 
-19. 
-20. 
-21. 
+18. 7
+19. 5
+20. 4
+21. 3
 
 Actual Time (minutes):
 1.  3
 2.  15
 3.  4
-4.  
+4.  7
 5.  3
 6.  15
 7.  2
-8.  
+8.  6
 9.  3
 10. 3
 11. 5
@@ -68,9 +68,9 @@ Actual Time (minutes):
 15. 3
 16. 3
 17. 5
-18. 
-19. 
-20. 
-21. 
+18. 5
+19. 2
+20. 3
+21. 2
 
 */}

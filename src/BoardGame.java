@@ -1,6 +1,8 @@
 import java.util.LinkedHashMap;
 import javax.tools.DocumentationTool.Location;
 import java.util.ArrayList;
+import java.util.Set;
+import java.util.HashSet;
 
 /**
  * Class to define a board game. Contains methods to add a player, get players and their pieces, 
@@ -48,6 +50,8 @@ public class BoardGame {
 		else {
 			gamePieceTaken = false;
 		}
+		
+		return gamePieceTaken;
 	}
 	
 	/**
@@ -60,13 +64,13 @@ public class BoardGame {
 	}
 	
 	public String getPlayerwithGamePiece(GamePiece gamePiece) {
-		String playerName;
 		
-		if(playerPieces.containsValue(gamePiece)) { 
-			for(int i = 0; i < playerPieces.size(); i++) {
-				
+		for(String name : this.playerPieces.keySet()) {
+			if(this.playerPieces.get(name).equals(gamePiece)) {
+				return name;
 			}
 		}
+		return null;	
 	}
 	
 	/**
@@ -125,9 +129,35 @@ public class BoardGame {
 	public ArrayList<String> getPlayersAtLocation(Location loc){
 		ArrayList<String> playersAtLocation = new ArrayList<String>();
 		
-		for(int i = 0; i < playerLocations.size(); i++) {
-			
+		for(String name : this.playerLocations.keySet()) {
+			if(this.playerLocations.get(name).equals(loc)) {
+				playersAtLocation.add(name);
+			}
 		}
+		return playersAtLocation;
+	}
+	
+	public ArrayList<GamePiece> getGamePiecesAtLocation(Location loc){
+		ArrayList<GamePiece> piecesAtLocation = new ArrayList<GamePiece>();
+		
+		for(String name : this.playerLocations.keySet()) {
+			if(this.playerLocations.get(name).equals(loc)) {
+				piecesAtLocation.add(playerPieces.get(name));
+			}
+		}
+		return piecesAtLocation;
+	}
+	
+	public Set<String> getPlayers() {
+		return playerPieces.keySet();
+	}
+	
+	public Set<Location> getPlayerLocations() {
+		return new HashSet<Location>(playerLocations.values());
+	}
+	
+	public Set<GamePiece> getPlayerPieces() {
+		return new HashSet<GamePiece>(playerPieces.values());
 	}
 
 }
