@@ -54,7 +54,7 @@ public enum GamePiece {
 	 * Method to return the GamePiece object as a string
 	 */
 	public String toString() {
-		return String.format("%s: a %s %s with priority %d", this.name(), this.getColor(), this.getShape(), priority);
+		return String.format("%s: a %s %s with priority %d", this.name(), this.getColor(), this.getShape().name(), priority);
 	}
 
 }

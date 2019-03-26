@@ -1,5 +1,4 @@
 import java.util.LinkedHashMap;
-import javax.tools.DocumentationTool.Location;
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.HashSet;
@@ -33,22 +32,23 @@ public class BoardGame {
 	 * Checks to see if the game piece is not already taken. If it is the method returns false, otherwise it returns true
 	 * @param playerName
 	 * @param gamePiece
-	 * @param initialLocation
+	 * @param ballroom
 	 * @return gamePieceTaken
-	 */
-	public boolean addPlayer(String playerName, GamePiece gamePiece, Location initialLocation) {
+	*/ 
+	public boolean addPlayer(String playerName, GamePiece gamePiece, Location location) {
 		
-		boolean gamePieceTaken;
+		boolean gamePieceTaken = true;
 		
 		//checks to see if the hash map already contains the game piece and if it doesn't adds the player and game piece
-		if(!playerPieces.containsValue(gamePiece)) {
-			playerPieces.put(playerName, gamePiece);
-			gamePieceTaken = true;
-			//puts the player in their initial location
-			playerLocations.put(playerName, initialLocation);
+		if(playerPieces.containsValue(gamePiece)) {
+			gamePieceTaken = false;
 		}
 		else {
-			gamePieceTaken = false;
+			playerPieces.put(playerName, gamePiece);
+			//puts the player in their initial location
+			playerLocations.put(playerName, location);
+			gamePieceTaken = true;
+			
 		}
 		
 		return gamePieceTaken;
@@ -69,14 +69,15 @@ public class BoardGame {
 	 */
 	public String getPlayerwithGamePiece(GamePiece gamePiece) {
 		
+		String player = "";
 		//iterates through the set of the player names
 		for(String name : this.playerPieces.keySet()) {
 			//get the piece assigned to the player and checks to see if it matches the given one
 			if(this.playerPieces.get(name).equals(gamePiece)) {
-				return name;
+				player = name;
 			}
 		}
-		return null;	
+		return player;	
 	}
 	
 	/**
@@ -194,5 +195,6 @@ public class BoardGame {
 	public Set<GamePiece> getPlayerPieces() {
 		return new HashSet<GamePiece>(playerPieces.values());
 	}
+
 
 }
