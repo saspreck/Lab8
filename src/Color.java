@@ -6,20 +6,38 @@ public enum Color {
 	private int g;
 	private int b;
 	
+	/**
+	 * Constructor for a color object that takes three values, one for red, one for green, and one for blue
+	 * @param r
+	 * @param g
+	 * @param b
+	 */
 	private Color(int r, int g, int b) {
 		this.r = r;
 		this.g = g;
 		this.b = b;
 	}
 
+	/**
+	 * Method to get the red value of a color
+	 * @return r
+	 */
 	public int getR() {
 		return r;
 	}
 
+	/**
+	 * Method to get the green value of a color
+	 * @return g
+	 */
 	public int getG() {
 		return g;
 	}
 
+	/**
+	 * Method to get the blue value of a color
+	 * @return b
+	 */
 	public int getB() {
 		return b;
 	}

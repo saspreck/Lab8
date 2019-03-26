@@ -9,19 +9,38 @@ public enum GamePiece {
 	
 	private int priority; 
 	
+	/**
+	 * Constructor for a GamePiece object that takes the appearance of a game piece and its priority
+	 * @param appearance
+	 * @param priority
+	 */
 	private GamePiece(GamePieceAppearance appearance, int priority) {
 		this.appearance = appearance;
 		this.priority = priority;
 	}
 	
+	/**
+	 * Method to get the color of the game piece
+	 * @return appearance.getColor()
+	 */
 	public Color getColor() {
 		return appearance.getColor();
 	}
 	
+	/**
+	 * Method to get the shape of the game piece
+	 * @return appearance.getShape()
+	 */
 	public Shape getShape() {
 		return appearance.getShape();
 	}
 	
+	/**
+	 * Method to determine which game piece should move first given their priorities
+	 * @param a
+	 * @param b
+	 * @return a or b, whichever has the lower priority
+	 */
 	public static GamePiece movesFirst(GamePiece a, GamePiece b) {
 		if(a.priority < b.priority) {
 			return a;
@@ -31,6 +50,9 @@ public enum GamePiece {
 		}
 	}
 	
+	/**
+	 * Method to return the GamePiece object as a string
+	 */
 	public String toString() {
 		return String.format("%s: a %s %s with priority %d", this.name(), this.getColor(), this.getShape(), priority);
 	}
