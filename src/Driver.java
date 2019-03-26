@@ -14,7 +14,7 @@ public class Driver {
 		System.out.println(clue.getPlayerGamePiece("John"));
 		
 		//prints the player assigned to red racer
-		System.out.println(clue.getPlayerwithGamePiece(GamePiece.RED_RACER));
+		System.out.println(clue.getPlayerWithGamePiece(GamePiece.RED_RACER));
 		
 		//prints the location of Alexa
 		System.out.println(clue.getPlayersLocation("Alexa"));

@@ -26,7 +26,8 @@ public class BoardGameTest {
 	public void getPlayerWithGamePieceTest() {
 		clue.addPlayer("Ryan", GamePiece.RED_THIMBLE, Location.LOUNGE);
 		
-		Assert.assertEquals("Wrong player returned", "Ryan", clue.getPlayerwithGamePiece(GamePiece.RED_THIMBLE));
+		Assert.assertEquals("Wrong player returned", "Ryan", clue.getPlayerWithGamePiece(GamePiece.RED_THIMBLE));
+		Assert.assertEquals("", clue.getPlayerWithGamePiece(GamePiece.BLUE_BOOT));
 	}
 	
 	@Test

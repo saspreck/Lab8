@@ -67,7 +67,7 @@ public class BoardGame {
 	 * @param gamePiece
 	 * @return name
 	 */
-	public String getPlayerwithGamePiece(GamePiece gamePiece) {
+	public String getPlayerWithGamePiece(GamePiece gamePiece) {
 		
 		String player = "";
 		//iterates through the set of the player names

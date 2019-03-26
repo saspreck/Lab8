@@ -72,5 +72,25 @@ public class EnumsTest {
 	public void GamePieceToStringTest() {
 		Assert.assertEquals("Incorrect toString", "RED_THIMBLE: a RED THIMBLE with priority 10", GamePiece.RED_THIMBLE.toString());
 	}
+	
+	@Test
+	public void LocationTest() {
+		Assert.assertEquals(Location.valueOf("KITCHEN").name().toLowerCase(), Location.KITCHEN.name().toLowerCase());
+		Assert.assertEquals(Shape.valueOf("RACECAR").name().toLowerCase(), Shape.RACECAR.name().toLowerCase());
+		Assert.assertEquals(Color.valueOf("BLUE").name().toLowerCase(), Color.BLUE.name().toLowerCase());
+		Assert.assertEquals(GamePiece.valueOf("BLUE_RACER").name().toLowerCase(), GamePiece.BLUE_RACER.name().toLowerCase());
+	}
+	
+	@Test
+	public void ColorGettersTest() {
+		Assert.assertEquals(255, Color.RED.getR());
+		Assert.assertEquals(255, Color.GREEN.getG());
+		Assert.assertEquals(255, Color.BLUE.getB());
+	}
+	
+	@Test
+	public void ShapeToStringTest() {
+		Assert.assertEquals("thimble", Shape.THIMBLE.toString());
+	}
 }
 
