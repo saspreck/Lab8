@@ -32,7 +32,7 @@ public class BoardGame {
 	 * Checks to see if the game piece is not already taken. If it is the method returns false, otherwise it returns true
 	 * @param playerName
 	 * @param gamePiece
-	 * @param ballroom
+	 * @param location
 	 * @return gamePieceTaken
 	*/ 
 	public boolean addPlayer(String playerName, GamePiece gamePiece, Location location) {
